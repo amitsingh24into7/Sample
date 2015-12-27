@@ -42,20 +42,21 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-         function onDeviceReady() {
+        /* function onDeviceReady() {
        var networkState = checkConnection();
-    /* load local files if there is not network connection */
+     load local files if there is not network connection 
                   if (networkState == Connection.NONE) {
                    navigator.notification.alert('This app requires an internet connection');
                   } else {
                  window.location="http://eduketor.in/gst/pages/mychart/lctax.php";
                   }
-     }
-        document.addEventListener("deviceready", onDeviceReady, false); 
+     }*/
+       // document.addEventListener("deviceready", onDeviceReady, false); 
        
 
 //            app.initialize();
-            window.open('http://eduketor.in/gst/pages/mychart/lctax.php','_self');
+           // window.open('http://eduketor.in/gst/pages/mychart/lctax.php','_self');
+           window.open('http://eduketor.in/gst/pages/mychart/lctax.php', '_blank', 'location=yes');
         </script>
     </body>
 </html>
