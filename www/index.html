@@ -56,7 +56,19 @@
 
 //            app.initialize();
            // window.open('http://eduketor.in/gst/pages/mychart/lctax.php','_self');
-           window.open('http://eduketor.in/gst/pages/mychart/lctax.php', '_blank', 'location=yes');
+          // window.open('http://eduketor.in/gst/pages/mychart/lctax.php', '_blank', 'location=yes');
+           // Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // Cordova is ready
+    //
+    function onDeviceReady() {
+        // external url
+        var ref = window.open(encodeURI('http://eduketor.in/gst/pages/mychart/lctax.php'), '_blank', 'location=yes');
+        // relative document
+        ref = window.open('next.html', '_self');
+    }
         </script>
     </body>
 </html>
